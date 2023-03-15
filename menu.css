@@ -1,0 +1,485 @@
+@font-face {
+    font-family: grand;
+    src: url(grand.otf);
+  }
+
+  @font-face {
+    font-family: deco;
+    src: url(deco.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: url(poly.svg);
+    height:140vh;
+}
+.menu{
+  
+}
+.menu #cart i{
+    margin-top: -30px;
+    margin-right: 20px;
+    float: right;
+}
+.menu .side-menu{
+position: fixed;
+bottom: 460px;
+width: 30vw;
+height: 40vh;
+background: rgba(217, 217, 217, 0.1);
+box-shadow: inset 14.1667px -14.1667px 14.1667px rgba(165, 165, 165, 0.1), inset -14.1667px 14.1667px 14.1667px rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(14.1667px);
+border-radius: 0px 0px 20px 0px;
+border: 2px solid rgb(91, 91, 91);
+border-top: 2px solid black;
+border-left: 2px solid black;
+border-bottom: 1px solid rgb(105, 105, 105);
+
+}
+.side-menu::-webkit-scrollbar{
+    height: 0;
+
+}
+ .menu-sidebar2{
+    position:fixed;
+    top: 640px;
+    width: 30vw;
+    height: 170vh;
+    background: rgba(108, 108, 108, 0.1);
+    box-shadow: inset 14.1667px -14.1667px 14.1667px rgba(165, 165, 165, 0.1), inset -14.1667px 14.1667px 14.1667px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(14.1667px);
+    border-radius: 0px 20px 0px 0px;
+    border: 2px solid rgb(91, 91, 91);
+    border-top: 2px solid rgb(208, 208, 208);
+    border-left: 2px solid black;
+    border-bottom: 1px solid rgb(105, 105, 105);
+    
+    }
+    .menu-sidebar{
+        position: fixed;
+    }
+.menu-sidebar .burger{
+    margin-top: 0px;
+    margin-left: 100px;
+box-sizing: border-box;
+width: 12vw;
+height: 32vh;
+background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+backdrop-filter: blur(12.8753px);
+border-radius: 100px;
+border-top: 2px solid rgb(171, 171, 171);
+border-left: 2px solid rgb(108, 108, 108);
+border-bottom: 1px solid rgb(228, 228, 228);
+border-right: 1px solid rgb(200, 200, 200);
+transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+opacity: 0.5;
+}
+.menu-sidebar .burger img{
+    margin-top: 2px;
+margin-left: 5px;
+width: 11.2vw;
+height: 31vh;
+border-radius: 100px;
+rotate: 0deg;
+}
+.menu-sidebar .lasagna{
+    margin-top: 80px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    width: 12vw;
+    height: 32vh;
+    background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+    backdrop-filter: blur(12.8753px);
+    border-radius: 100px;
+    border-top: 2px solid rgb(171, 171, 171);
+    border-left: 2px solid rgb(108, 108, 108);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    border-right: 1px solid rgb(200, 200, 200);
+    transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+    opacity: 1;
+    }
+    .menu-sidebar .lasagna img{
+        margin-top: 2px;
+   margin-left: 5px;
+    width: 11.2vw;
+    height: 31vh;
+    border-radius: 100px;
+    rotate: 0deg;
+    }
+    .menu-sidebar .fried-chicken{
+        margin-top: 80px;
+        margin-left: 100px;
+        box-sizing: border-box;
+        width: 12vw;
+        height: 32vh;
+        background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+        backdrop-filter: blur(12.8753px);
+        border-radius: 100px;
+        border-top: 2px solid rgb(171, 171, 171);
+        border-left: 2px solid rgb(108, 108, 108);
+        border-bottom: 1px solid rgb(228, 228, 228);
+        border-right: 1px solid rgb(200, 200, 200);
+        transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+        opacity: 1;
+        }
+        .menu-sidebar .fried-chicken img{
+      margin-top: 2px;
+      margin-left: 5px;
+        width: 11.2vw;
+        height: 31vh;
+        border-radius: 100px;
+        rotate: 0deg;
+        }
+        .menu-sidebar .tacoz{
+            margin-top: 80px;
+            margin-left: 100px;
+            box-sizing: border-box;
+            
+            width: 12vw;
+            height: 32vh;
+            background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+            backdrop-filter: blur(12.8753px);
+            border-radius: 100px;
+            border-top: 2px solid rgb(171, 171, 171);
+            border-left: 2px solid rgb(108, 108, 108);
+            border-bottom: 1px solid rgb(228, 228, 228);
+            border-right: 1px solid rgb(200, 200, 200);
+            transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+            opacity: 0.5;
+            }
+            .menu-sidebar .tacoz img{
+            margin-top: 2px;
+            margin-left: 5px;
+            width: 11.2vw;
+            height: 31vh;
+            border-radius: 100px;
+            rotate: 0deg;
+            }
+            .menu-sidebar .hot-dog{
+                margin-top: 80px;
+                margin-left: 100px;
+                box-sizing: border-box;
+                
+                width: 12vw;
+                height: 32vh;
+                background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+                backdrop-filter: blur(12.8753px);
+                border-radius: 100px;
+                border-top: 2px solid rgb(171, 171, 171);
+                border-left: 2px solid rgb(108, 108, 108);
+                border-bottom: 1px solid rgb(228, 228, 228);
+                border-right: 1px solid rgb(200, 200, 200);
+                transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+                opacity: 0.5;
+                }
+                .menu-sidebar .hot-dog img{
+                margin-top: 2px;
+                margin-left: 5px;
+                width: 11.2vw;
+                height: 31vh;
+                border-radius: 100px;
+                rotate: 0deg;
+                }
+                .menu-sidebar .mohito{
+                    margin-top: 80px;
+                    margin-left: 100px;
+                    box-sizing: border-box;
+                    
+                    width: 12vw;
+                    height: 32vh;
+                    background: linear-gradient(28.32deg, rgba(255, 255, 255, 0.109) 3.02%, rgba(255, 255, 255, 0.109) 22.95%, rgba(0, 0, 0, 0.109) 45.18%, rgba(0, 0, 0, 0.109) 85.12%);
+                    backdrop-filter: blur(12.8753px);
+                    border-radius: 100px;
+                    border-top: 2px solid rgb(171, 171, 171);
+                    border-left: 2px solid rgb(108, 108, 108);
+                    border-bottom: 1px solid rgb(228, 228, 228);
+                    border-right: 1px solid rgb(200, 200, 200);
+                    transform: matrix(0.96, -0.23, 0.27, 0.97, 0, 0);
+                    opacity: 0.5;
+                    }
+                    .menu-sidebar .mohito img{
+                    margin-top: 2px;
+                    margin-left: 5px;
+                    width: 11.2vw;
+                    height: 31vh;
+                    border-radius: 100px;
+                    rotate: 0deg;
+                    }
+                    /**side menu **/
+
+        .menu-lists1{
+            width: fit-content;
+            height: fit-content;
+           display: flex;
+           flex-wrap: wrap;
+           padding-left: 600px;
+          gap:200px;
+          margin-top: 50px;
+text-align: left;
+        }
+        .menu-lists1 button{
+            
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 7vw;
+            height: 5vh;
+            background-color: black;
+            color: white;
+            font-family: deco;
+        }
+        .menu-lists1 .beef-lasgna{
+            box-sizing: border-box;
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .beef-lasgna img{
+           
+            width: 15vw;
+        }
+        .beef-lasgna h1{
+           
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1;
+        }
+        .beef-lasgna h2{
+            
+        }
+        .menu-lists1 .bread-lasgna{
+            box-sizing: border-box;
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .bread-lasgna img{
+            
+            width: 15vw;
+        }
+        .bread-lasgna h1,h2{
+           
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .menu-lists1 .scarlet-lasgna{
+            box-sizing: border-box;
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .scarlet-lasgna img{
+           
+            width: 15vw;
+        }
+        .scarlet-lasgna h1,h2{
+            
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .menu-lists1 .veggie-lasgna{ 
+             box-sizing: border-box;
+           
+
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .veggie-lasgna img{
+         
+            width: 15vw;
+        }
+        .veggie-lasgna h1{
+          
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .veggie-lasgna h2{
+          
+        }
+        .menu-lists1 .cheese-lasgna{
+            box-sizing: border-box;
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .cheese-lasgna img{
+         
+            width: 13vw;
+        }
+        .cheese-lasgna h1,h2{
+        
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .menu-lists1 .egg-lasgna{
+            box-sizing: border-box;
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .egg-lasgna img{
+           
+            width: 13vw;
+        }
+        .egg-lasgna h1{
+           
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .egg-lasgna h2{
+          
+        }
+        .menu-lists1 .spicy-lasgna{
+            box-sizing: border-box;
+
+width: 20vw;
+height: 32vh;
+background: linear-gradient(186.37deg, rgba(255, 255, 255, 0.501) 5.02%, rgba(71, 71, 71, 0.537) 55.85%, rgba(30, 30, 30, 0.351) 67.19%, rgba(255, 255, 255, 0.109) 95.73%);
+backdrop-filter: blur(12.8753px);
+border-radius: 33px 0px 32px;
+border: 2px solid white;
+border-top: 2px solid #fff9f9bf;
+border-left: 2px solid#ffffff67;
+border-right: 2px solid #c5c2c275;
+border-bottom:  2px solid #929191;
+        }
+        .spicy-lasgna img{ 
+            width: 13vw;
+        }
+        .spicy-lasgna h1,h2{
+            font: 1.5rem deco ;
+            color: white;
+            line-height: 1.3;
+        }
+        .list-1,.list-3,
+        .list-4,.list-5,.list-6,
+        .list-7{
+            display: flex;
+            gap: 30px;
+           
+        }
+        .list-2{
+            display: flex;
+            gap: 30px;
+           margin-top: 30px;
+        
+        }
+        .cart-page{
+            display: flex;
+            flex-wrap: wrap;
+            width:100vw;
+            height: 100vh;
+            background-image: url(polygon-scatter-haikei.svg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display:none ;
+            z-index: 1;
+            font-family: deco;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+         
+        }
+        .beefcart,.breadcart,.scarletcart,.veggiecart,
+        .cheesecart,.eggcart,.spicycart{
+            margin-top: 80px;
+            margin-left: 300px;
+            float: center;
+            height: 200px;
+            color: white; 
+            border: 1px solid white;
+            width: 17rem;
+            border-radius: 30px 0px 30px 0px;
+            background: linear-gradient(28.32deg, rgba(132, 132, 132, 0.109) 3.02%, rgba(229, 229, 229, 0.109) 22.95%, rgba(206, 206, 206, 0.109) 45.18%, rgba(158, 157, 157, 0.336) 85.12%);
+            backdrop-filter: blur(12.8753px);
+            border-top: 2px solid #fff9f9bf;
+            border-left: 2px solid#ffffff67;
+            border-right: 2px solid #c5c2c275;
+            border-bottom:  2px solid #929191;
+        }
+        .breadcart img,.beefcart img,.spicycart img,.scarletcart img,
+        .veggiecart img,.cheesecart img,.eggcart img{
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 12rem;
+            height: 7rem;
+        }
+        .breadcart button,.beefcart button,
+        .scarletcart button,.veggiecart button,
+        .cheesecart button,.eggcart button,
+        .spicycart button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 20px;
+            color: white;
+            background-color: black;
+            font-family: grand;
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+        .breadcart button:hover,
+        .beefcart button:hover,
+        .scarletcart button:hover,
+        .veggiecart button:hover,
+        .cheesecart button:hover,
+        .eggcart button:hover,
+        .spicycart button:hover{
+            background-color: rgb(50, 50, 50);
+        }
